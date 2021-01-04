@@ -1,0 +1,106 @@
+h1
+{
+    text-shadow: 15px 15px 5px rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+}
+header,body,html
+{
+    width: 100%;
+    height: 100%;
+}
+
+header
+{
+    background: url("int_maison.png") no-repeat center center;
+    background-size: cover;
+}
+div#content div
+{
+    display: inline-block;
+    width: 48%;
+}
+
+div#content div p{
+    margin: 35px;
+}
+
+div#content div.bulle1gauche
+{
+    /*background: url("bulle.jpg") no-repeat;*/
+    border: 3px black dotted;
+    margin: 2px 0 3px 1px;
+    height: 450px;
+    width: 450px;
+}
+
+div#content div.bulle1droite
+{
+    /*background: url('Papy.png') no-repeat;*/
+    vertical-align: top;
+    border: 3px black dotted;
+    margin: 2px 0 3px 1px;
+    height: 450px;
+    width: 450px;
+}
+
+
+bulle3
+{
+    border: 3px black dotted;
+    margin: 2px 0 3px 1px;
+}
+
+footer
+{
+    border: 3px black dotted;
+    margin: 2px 0 3px 1px;
+}
+
+/*SPINNER*/
+
+.gg-spinner {
+    transform: scale(var(--ggs, 2));
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.gg-spinner,
+.gg-spinner::after,
+.gg-spinner::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px
+}
+
+.gg-spinner::after,
+.gg-spinner::before {
+    content: "";
+    position: absolute;
+    border-radius: 100px
+}
+
+
+.gg-spinner::before {
+    animation: spinner 1s cubic-bezier(.6, 0, .4, 1) infinite;
+    border: 3px solid transparent;
+    border-top-color: currentColor
+}
+
+.gg-spinner::after {
+    border: 3px solid;
+    opacity: .2
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
